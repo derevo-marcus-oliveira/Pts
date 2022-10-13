@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    
+    margin-top: 20px 60px;
+
+    /* 
+        Tamnaho da tela
+        levando em consideração  
+        1900px de largura
+        900px de altura
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#perfil_empresa {
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    border: 1px solid;
+}
+
+#perfil_empresa div {
+
+    border: 1px solid blue;
+
+}
+
+#container {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+
+    border: 1px solid ;
+}
