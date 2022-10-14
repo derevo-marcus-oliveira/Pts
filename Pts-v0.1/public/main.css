@@ -4,6 +4,10 @@
 }
 
 body {
+    
+}
+
+#area_max {
     width: 100vw;
     height: 100vh;
 
@@ -22,26 +26,76 @@ body {
 
 }
 
-#perfil_empresa {
-    
+#perfil_nome_emp {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    border: 1px solid;
+
+}
+
+#perfil_nome_emp div h2 {
+    position: relative;
+    font-size: 2.6em;
+    text-align: center;
+}
+
+#menu {
+    
+    grid-column-start: 4;
+    grid-column-end: 14;
     grid-row-start: 1;
     grid-row-end: 2;
 
     border: 1px solid;
 }
 
-#perfil_empresa div {
-
-    border: 1px solid blue;
-
+.btn {
+    font-size: 2em;
+    margin: 5px 25px;
+    padding: px;
+    border: none;
+    background: none;
 }
 
-#container {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    
+.btn a {
+    text-decoration: none;
+    color:black;
+}
 
-    border: 1px solid ;
+.nav-menu {
+    height: 100%;
+}
+
+.nav-menu ul {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    height: 100%;
+    width: auto;
+}
+
+.item {
+    position: absolute;
+    height: 0;
+    width: 0;
+
+    margin-left: 60px;
+    border-radius: 2px;
+
+    transition: 0.3s;
+}
+
+.nav-menu ul li:hover .item{
+    border: 1px solid;
+    
+    height: 100px;
+    width: 160px;
+
 }
